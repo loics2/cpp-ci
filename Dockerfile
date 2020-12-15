@@ -2,7 +2,7 @@ FROM ubuntu:focal
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
-    curl build-essential clang-format-9 git cppcheck python3-pip doxygen libboost-all-dev 
+    curl build-essential clang-format git cppcheck python3-pip doxygen libboost-all-dev 
 
 # cppcheck-codequality is used to convert cppcheck output to Gitlab Code
 # Quality json format without using Code Climate
